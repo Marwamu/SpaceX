@@ -322,34 +322,40 @@ footer ul li a:hover {
 }
 
 /* Inner Pages */
-.bg-falcon-9{
+.bg-falcon-9 {
   background-image: url("../img/falcon-9.webp");
+}
+.bg-falcon-heavy {
+  background-image: url("../img/falcon-heavy.webp");
+}
+.bg-dragon {
+  background-image: url("../img/dragon.webp");
 }
 .section-inner-center {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  max-width: 560px;
   text-align: center;
   transform: translate(-50%, 50%);
   text-transform: uppercase;
+  width: 80%;
 }
-.section-inner-center h3{
+.section-inner-center h3 {
   font-size: 100px;
   margin-bottom: 50px;
   animation: fadeInUp 0.5s ease-in-out;
 }
-.section-inner-center p{
+.section-inner-center p {
   font-size: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
 }
-.section-animate{
+.section-animate {
   animation: fadeIn 2s ease-in-out;
 }
 
 /* Stats */
-.stats{
+.stats {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
@@ -358,14 +364,13 @@ footer ul li a:hover {
   align-items: center;
   text-transform: uppercase;
 }
-.stats div span{
+.stats div span {
   font-size: 160px;
 }
-.stats div h4{
+.stats div h4 {
   font-size: 24px;
   font-weight: 300;
 }
-
 
 /* Animations */
 
@@ -415,6 +420,9 @@ footer ul li a:hover {
   .mobile-only {
     display: block;
   }
+  .section-inner-center h3 {
+    font-size: 75px;
+  }
 }
 @media (max-width: 600px) {
   .section-inner {
@@ -436,5 +444,19 @@ footer ul li a:hover {
   .logo {
     width: 150px;
     margin: auto;
+  }
+  .section-inner-center {
+    width: 80%;
+  }
+  .section-inner-center h3 {
+    font-size: 50px;
+  }
+  .stats {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats div {
+    margin-bottom: 20px;
   }
 }
